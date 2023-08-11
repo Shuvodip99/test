@@ -1,0 +1,24 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>New Post</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.content.label }}<br>
+            {{ form.content(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+
+    <hr>
+
+    {% for post in posts %}
+        <div class="post">
+            <p>{{ post.author.username }} says: {{ post.content }}</p>
+            <p><small>Posted on {{ post.timestamp.strftime('%Y-%m-%d %H:%M') }}</small></p>
+        </div>
+    {% endfor %}
+{% endblock %}
+```
