@@ -1,0 +1,73 @@
+/* main.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.post .username {
+    font-weight: bold;
+}
+
+.post .content {
+    margin-top: 10px;
+}
+
+.form-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="password"] {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.form-container form button {
+    background-color: #1da1f2;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-container form button:hover {
+    background-color: #0d95e8;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
